@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Reservations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="button"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        width: 80%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .form_thanksMsg {
+        font-size: 17px;
+      }
+    </style>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Images/site.webmanifest" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="CSS/santani_dinning.css" type="text/css" />
+    <style type="text/css">
+      <!--
+      body {
+      	background-color: #440204;
+      }
+      .style7 {
+      	font-size: 36px;
+      	color: #FFFF00;
+      }
+      .style8 {font-size: 24px}
+      .style10 {color: #000000; font-size: 16px; }
+      .style11 {color: #FFFF00}
+      .style17 {
+      	color: #FF3300;
+      	font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .style22 {font-family: Georgia, "Times New Roman", Times, serif}
+      .style40 {font-size: 16px;
+      	font-family: Georgia, "Times New Roman", Times, serif;
+      	color: #FFFF00;
+      	font-weight: normal;
+      }
+      .style41 {color: #FFFF00; font-size: 16px;}
+      .style42 {font-size: 13px;
+      	font-family: Georgia, "Times New Roman", Times, serif;
+      	color: #0000FF;
+      	font-style: italic;
+      }
+      .style18 {color: #0000FF}
+      .style44 {font-size: 24px; color: #0000FF;letter-spacing: .0.5em; line-height: 38px; color: hsl(229, 92%, 39%);}
+      -->
+    </style>
+  </head>
+  <body>
+    <table width="74%" height="1490" border="0" cellpadding="0" cellspacing="0">
+      <tr bgcolor="#99ccff">
+        <td
+          height="60"
+          colspan="3"
+          nowrap="nowrap"
+          bgcolor="#240203"
+          class="logo"
+        >
+          <pre><span class="pageHeader style7"><img name="" src="Images/santani_photo1.jpg" width="215" height="127" alt="" />  SANTANI HOTELS CEYLON</span> <span class="tagline style11">|<span class="style8"><span class="style17">RESERVATIONS </span><img src="Images/santani_photo2.jpg" width="226" height="120" alt="" /></span></span> 	    </pre>
+          <p>
+            <img
+              src="Images/mm_spacer.gif"
+              alt="sp"
+              width="1"
+              height="1"
+              border="0"
+            /><span class="style11">Follow Us on </span>
+            <span class="style11"
+              ><img
+                name=""
+                src="Images/twitter.jpg"
+                width="29"
+                height="29"
+                alt="twi"
+              />
+              <img
+                name=""
+                src="Images/instagram.jpg"
+                width="28"
+                height="29"
+                alt="ins"
+              />
+              For Reservations:</span
+            >
+            <span class="style11">santanireservations@aol.com</span>
+          </p>
+          <hr />
+          <table width="1342" border="0">
+            <tr class="style40">
+              <td width="189" height="24" class="style40">
+                <div align="center" class="style40">
+                  <a href="Home page.html" class="style41">HOME PAGE</a>
+                </div>
+              </td>
+              <td width="190" class="style40">
+                <div align="center" class="style22">
+                  <a href="Accommodation.html" class="style41">ACCOMMODATION</a>
+                </div>
+              </td>
+              <td width="156" class="style40">
+                <div align="center" class="style22">
+                  <a href="Dining.html" class="style41">DINING</a>
+                </div>
+              </td>
+              <td width="200" class="style40">
+                <div align="center" class="style22">
+                  <a href="Reservations.html" class="style41">RESERVATION</a>
+                </div>
+              </td>
+              <td width="134" class="style40">
+                <div align="center" class="style22">
+                  <a href="Restaurant menus.html" class="style41">MENUS</a>
+                </div>
+              </td>
+              <td width="197" class="style40">
+                <div align="center" class="style40">
+                  <a href="Contact Us.html" class="style41">CONTACT US </a>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <hr />
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffff">
+        <td width="202" rowspan="3" valign="top" bgcolor="#440204">
+          <p class="logo">
+            <img src="Images/SANTANI LOGO.jpg" width="202" height="193" />
+          </p>
+          <p class="logo">&nbsp;</p>
+        </td>
+        <td colspan="2" align="center" bgcolor="#99FFCC" class="columnHeader">
+          <div align="center">
+            <br />
+            <img
+              name=""
+              src="Images/make-reservations-now.gif"
+              width="394"
+              height="182"
+              alt=""
+            /><br />
+            <br />
+            <hr />
+          </div>
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffff">
+        <td colspan="2" bgcolor="#99FFCC" class="smallText">
+          <div align="center">
+            <img
+              src="Images/santani-contact.jpeg"
+              alt="product image 1"
+              width="519"
+              height="278"
+              vspace="6"
+              border="0"
+            />
+          </div>
+          <p align="center" class="style44">
+            Welcome to&nbsp;<em>Santani</em>&nbsp;Resort and Spa, the best
+            wellness retreat in the world, where you leave
+            ...&nbsp;<em>Book</em>&nbsp;Direct
+            with&nbsp;<em>Santani</em>&nbsp;... Additional 12% Off
+            on&nbsp;<em>Room</em>&nbsp;Rates.
+          </p>
+          <p align="center" class="style44">
+            <span class="style10"
+              ><img
+                name=""
+                src="Images/booking.jpg"
+                width="325"
+                height="155"
+                alt=""
+            /></span>
+          </p>
+          <hr />
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffff">
+        <td colspan="2" bgcolor="#99FFCC" class="smallText">
+          <p align="center" class="style44">
+            Check-in is from 02:00 PM, and check-out is until 03:00 PM. You may
+            request early check-in or late check-out during booking, subject to
+            availability. Guests checking in or out before or after the
+            designated periods may be charged an additional fee. The resort
+            offers luggage storage to guests for before check-in and after
+            check-out. The front desk is always open, day or night.
+          </p>
+          <p align="center" class="style44">
+            <img
+              name=""
+              src="Images/bner.png"
+              width="900"
+              height="200"
+              alt=""
+            />
+          </p>
+          <div class="container">
+            <form
+              id="frmBookingForm"
+              class="bookingForm"
+              action="#"
+              onsubmit="Reserve(event)"
+            >
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Your name.."
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+              />
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                id="Phone"
+                name="Phone"
+                placeholder="Your phone.."
+              />
+              <label for="room">Room Type</label>
+              <select
+                type="text"
+                id="Room_Type"
+                name="Room_Type"
+                placeholder="Your room type.."
+              >
+                <option value="10000">Standard</option>
+                <option value="15000">Premium</option>
+                <option value="20000">Deluxe</option>
+                <option value="25000">Suit</option>
+              </select>
+              <label for="meal">Meal Type</label>
+              <select
+                type="text"
+                id="MealType"
+                name="MealType"
+                placeholder="Your meal type.."
+              >
+                <option value="1500">BB</option>
+                <option value="3500">HB</option>
+                <option value="5000">FB</option>
+                <option value="400">Other</option>
+              </select>
+
+              <label for="extra">Extras</label><br />
+
+              <input
+                type="checkbox"
+                id="ExtraOption1"
+                name="ExtraOption1"
+                value="1000"
+              />
+              <label for="ExtraOption1"> Cake on arrival</label><br />
+
+              <input
+                type="checkbox"
+                id="ExtraOption2"
+                name="ExtraOption2"
+                value="7000"
+              />
+              <label for="ExtraOption2"> Extra bed</label><br />
+              <input
+                type="checkbox"
+                id="ExtraOption3"
+                name="ExtraOption3"
+                value="5000"
+              />
+              <label for="ExtraOption3"
+                >Candle light dinner on the first day</label
+              ><br /><br />
+
+              <label for="days">No Of Days </label>
+              <select
+                type="text"
+                id="days"
+                name="days"
+                placeholder="Your days.."
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+
+              <label for="occupancy">Occupancy </label>
+              <select
+                type="text"
+                id="Occupancy"
+                name="Occupancy"
+                placeholder="Your Occupancy.."
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+
+              <label for="date">From Date </label>
+              <input
+                type="date"
+                id="fromdate"
+                name="fromdate"
+                placeholder="Your fromdate.."
+              />
+              <label for="date">To Date </label>
+              <input
+                type="date"
+                id="todate"
+                name="todate"
+                placeholder="Your fromdate.."
+              />
+              <br />
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Sri Lanka</option>
+                <option value="usa">Other</option>
+              </select>
+
+              <label for="subject">Comments</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="button" value="Add to reserve" />
+              <input type="submit" value="Reserve" />
+              <input
+                type="button"
+                value="Add to favorites"
+                onclick="AddToFavorites()"
+              />
+              <input type="button" value="favourite reserve" />
+              <input
+                type="button"
+                id="btnCheck_Loyalty"
+                value="check loyalty"
+                onclick="CheckLoyalty()"
+              />
+            </form>
+            <div
+              class="form_thanksMsg"
+              style="
+                display: none;
+                font-size: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+              "
+            >
+              Thank you for your reservation. We are dedicated to giving you the
+              best experience possible. If you have any questions, feel free to
+              get in touch.
+
+              <table border="1" style="margin-top: 20px">
+                <tr>
+                  <th width="200px" style="text-align: left">Name</th>
+                  <th width="40px">Amount</th>
+                </tr>
+                <tr>
+                  <td>Room Charges</td>
+                  <td><span id="tblRoomChnarges"></span></td>
+                </tr>
+                <tr>
+                  <td>Meal Charges</td>
+                  <td><span id="tblMealChnarges"></span></td>
+                </tr>
+                <tr>
+                  <td>Extra Charges</td>
+                  <td><span id="tblExtraChargers"></span></td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td><span id="tblTotal"></span></td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="form_loyalatyMsg"
+              style="display: none; font-size: 20px; padding-top: 20px"
+            >
+              You have been awarded loyalty <span id="tblPoints"></span> points.
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="202" bgcolor="#99FFCC">
+          <img
+            name=""
+            src="Images/call.png"
+            width="39"
+            height="38"
+            alt=""
+          /><span class="style18">Phone:+9481234563</span>
+        </td>
+        <td width="645" bgcolor="#99FFCC">
+          <p align="center" class="style42">
+            Aratenna Estate, 00013, Werapitiya,Kandy, Sri Lanka
+          </p>
+          <p align="center" class="style42">
+            SANTANI-ALL RIGHTS RESERVED-(WDOS)&copy; (2021)
+          </p>
+        </td>
+        <td width="245" bgcolor="#99FFCC">
+          <div align="left">
+            <img
+              name=""
+              src="Images/images.png"
+              width="38"
+              height="35"
+              alt=""
+            /><span class="style18">Email: santanisl@aol.com</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      /* emailjs configaration settings  */
+      const USER_ID = "user_XH2rRGKSDFUV3gYUew6jl";
+      const SERVICE_ID = "service_7b63ufp";
+      const TEMPLATE_ID = "template_jpaig5q";
+      emailjs.init(USER_ID);
+
+      /*  Reserve button click event  */
+      const Reserve = (e) => {
+        e.preventDefault();
+
+        const roomchargers =
+          document.getElementById("Room_Type").value *
+          document.getElementById("days").value;
+
+        const mealschargers =
+          document.getElementById("MealType").value *
+          document.getElementById("Occupancy").value;
+
+        var option1 = 0;
+        var option2 = 0;
+        var option3 = 0;
+
+        if (document.getElementById("ExtraOption1").checked)
+          option1 = Number($("#ExtraOption1:checked").val());
+
+        if (document.getElementById("ExtraOption2").checked)
+          option2 = Number($("#ExtraOption2:checked").val());
+
+        if (document.getElementById("ExtraOption3").checked)
+          option3 = Number($("#ExtraOption3:checked").val());
+
+        const ExtraChargers =
+          (option1 + option2 + option3) *
+          document.getElementById("Occupancy").value;
+
+        /*alert(ExtraChargers);*/
+
+        const amount = roomchargers + mealschargers + ExtraChargers;
+
+        /* send email notification  */
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+          (result) => {
+            showThanksMsg(amount, mealschargers, roomchargers, ExtraChargers);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      };
+
+      /* For success msg and detail view   */
+      const showThanksMsg = (amount, meal, room, extra) => {
+        const thanksMsg = document.querySelector(".form_thanksMsg");
+        thanksMsg.style.display = "block";
+
+        const bookingForm = document.querySelector(".bookingForm");
+        bookingForm.style.display = "none";
+
+        document.getElementById("tblRoomChnarges").innerHTML = room;
+        document.getElementById("tblMealChnarges").innerHTML = meal;
+        document.getElementById("tblExtraChargers").innerHTML = extra;
+        document.getElementById("tblTotal").innerHTML = amount;
+      };
+
+      /* save formdata to local storage */
+      const SaveToLocal = () => {
+        var formData = $("#frmBookingForm").serializeArray();
+        console.log(JSON.stringify(formData));
+
+        localStorage.setItem("OrderObj", JSON.stringify(formData));
+
+        /* // Retrieve the object from storage
+      var retrievedObject = localStorage.getItem('OrderObj'); */
+      };
+
+      /* Add To Favorites button click event */
+      function AddToFavorites() {
+        SaveToLocal();
+      }
+
+      /* Check Loyalty button click event */
+      function CheckLoyalty() {
+        SaveToLocal();
+        let loyalatyMsg = document.querySelector(".form_loyalatyMsg");
+        loyalatyMsg.style.display = "block";
+
+        let points = 0;
+        let occupancy = Number(document.getElementById("Occupancy").value);
+
+        if (occupancy > 3) {
+          points = occupancy * 20;
+        }
+        document.getElementById("tblPoints").innerHTML = points;
+      }
+    </script>
+  </body>
+</html>

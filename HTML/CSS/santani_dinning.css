@@ -1,0 +1,124 @@
+/* Global Styles */
+
+body {
+	margin:0px;
+	}
+
+td {
+	color:#333333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	}
+	
+a {
+	color: #FFFF00;
+	font-weight:normal;
+	}
+	
+a:hover {
+	color: #990000;
+	text-decoration:underline;
+	}
+	
+/* ID Styles */
+
+#navigation a {
+	color: #000000;
+	text-decoration:none;
+	letter-spacing:.1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	}
+	
+#navigation a:hover {
+	color: #99CCFF;
+	}
+
+#padding {
+	padding:20px 5px 20px 5px;
+	}
+	
+#calendar td {
+	border: 1px solid rgb(0,51,153);
+	}
+	
+#noborder td {
+	border: 0px;
+	}
+	
+#weekdays th {
+	font:11px arial;
+	color: #ffffff;
+	font-weight:bold;
+	border: 0px;
+	padding:2px;
+	}
+
+#calheader td {
+	font-weight:bold;
+	}
+
+/* Class Styles */
+
+.logo {
+	color: #0E177C;
+	letter-spacing:normal;
+	font-weight:normal;
+	line-height:normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+
+.tagline {
+	color: #CC3300;
+	letter-spacing:.2em;
+	font-family: "times new roman";
+	font-size: 24px;
+	}
+
+.smallText {
+	font:12px times new roman;
+	color: #CC3300;
+	line-height:18px;
+	}
+
+.pageHeader {
+	color: #CC3300;
+	letter-spacing:normal;
+	line-height:normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	}
+	
+.bodyText {
+	font:11px arial;
+	color:#333333;
+	line-height:24px;
+	}
+	
+.pageName {
+	color: #CC3300;
+	letter-spacing:.1em;
+	line-height:26px;
+	font-family: georgia;
+	font-size: 36px;
+	}
+	
+.subHeader {
+	font:14px times new roman;
+	color: #003399;
+	font-weight:bold;
+	line-height:20px;
+	letter-spacing:.1em;
+	}
+	
+.navText {
+	font:10px arial;
+	color: #333300;
+	letter-spacing:.1em;
+	}
+	
